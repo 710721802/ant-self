@@ -1,0 +1,21 @@
+.ant-switch {
+  background-color: rgba(0, 20, 29, 0.3);
+  &:focus {
+    box-shadow: none;
+  }
+}
+.ant-switch-checked {
+  background-color: @theme-color;
+  &.ant-switch-disabled, .ant-switch-loading {
+    // opacity: 1;
+    background: #BFEBFF;
+  }
+}
+.ant-switch-disabled, .ant-switch-loading {
+  opacity: 1;
+  background: rgba(0, 20, 29, 0.15);
+}
+.ant-click-animating-node {
+  box-shadow: none;
+  animation: none;
+}

@@ -1,0 +1,58 @@
+{
+  "id": "3750394",
+  "name": "Edge AI",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "33124056",
+      "name": "icon_error",
+      "font_class": "icon_error",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "33061538",
+      "name": "icon_jt",
+      "font_class": "icon_jt",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "32934343",
+      "name": "icon_ces0",
+      "font_class": "icon_ces0",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "32933125",
+      "name": "icon_jx1",
+      "font_class": "icon_jx1",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "32913824",
+      "name": "测试3@3x",
+      "font_class": "ces4",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "32863945",
+      "name": "测试2@3x",
+      "font_class": "ceshi1",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "32863720",
+      "name": "测试1@3x",
+      "font_class": "ceshi2",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    }
+  ]
+}

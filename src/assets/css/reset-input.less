@@ -1,0 +1,414 @@
+/*input输入框重置样式*/
+.ant-input {
+  color: rgba(0, 20, 29, 0.7);
+  border: 1px solid rgba(0, 20, 29, 0.2);
+}
+.ant-input::-moz-placeholder {
+  color: rgba(0, 20, 29, 0.3);
+}
+.ant-input:-ms-input-placeholder {
+  color: rgba(0, 20, 29, 0.3);
+}
+.ant-input::-webkit-input-placeholder {
+  color: rgba(0, 20, 29, 0.3);
+}
+.ant-input:-moz-placeholder-shown {
+  text-overflow: ellipsis;
+}
+.ant-input:-ms-input-placeholder {
+  text-overflow: ellipsis;
+}
+.ant-input:placeholder-shown {
+  text-overflow: ellipsis;
+}
+
+.ant-input:hover {
+  border-color: rgba(0, 20, 29, 0.5);
+  border-right-width: 1px !important;
+}
+.ant-input:focus {
+  border-color: @theme-color;
+  border-right-width: 1px !important;
+  outline: 0;
+  box-shadow: none;
+}
+.ant-input-disabled {
+  color: rgba(0, 20, 29, 0.15);
+  background-color: #F5F7FA;
+  border-color: #DCDFE6;
+  cursor: not-allowed;
+  opacity: 1;
+}
+.ant-input-disabled:hover {
+  border-color: #DCDFE6;
+  border-right-width: 1px !important;
+}
+.ant-input[disabled] {
+  color: rgba(0, 20, 29, 0.15);
+  background-color: #F5F7FA;
+  border-color: #DCDFE6;
+  cursor: not-allowed;
+  opacity: 1;
+}
+.ant-input[disabled]:hover {
+  border-color: #DCDFE6;
+  border-right-width: 1px !important;
+}
+/*禁用按钮placeholder*/
+.ant-input-disabled::-moz-placeholder {
+  color: rgba(0, 20, 29, 0.15);
+}
+.ant-input-disabled:-ms-input-placeholder {
+  color: rgba(0, 20, 29, 0.15);
+}
+.ant-input-disabled::-webkit-input-placeholder {
+  color: rgba(0, 20, 29, 0.15);
+}
+
+/*input 输入框 在自动填充时，背景颜色更换*/
+input:-internal-autofill-previewed,
+input:-internal-autofill-selected {
+  -webkit-text-fill-color: rgba(0, 20, 29, 0.7);
+  transition: background-color 5000s ease-out 0.5s;
+}
+/*input 清空输入框图标*/
+.ant-input-clear-icon {
+  color: #D5D8DE;
+  opacity: 0.5;
+  font-size: 12px;
+  cursor: pointer;
+  transition: color 0.3s;
+  margin: 0 4px;
+  vertical-align: 0;
+}
+.ant-input-clear-icon:hover {
+  color: #D5D8DE;
+  opacity: 0.5;
+}
+.ant-input-clear-icon:active {
+  color: #D5D8DE;
+  opacity: 0.5;
+}
+.ant-input-clear-icon + i {
+  margin-left: 6px;
+}
+.ant-input-clear-icon-hidden {
+  visibility: hidden;
+}
+/*input搜索框搜索图标*/
+.ant-input-search-icon {
+  color: #52595E;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.ant-input-search-icon:hover {
+  color: @theme-color;
+  opacity: 1;
+}
+.ant-input-clear-icon:hover {
+  color: @theme-color;
+  opacity: 1;
+}
+.ant-input-password-icon:hover {
+  color: @theme-color;
+  opacity: 1;
+}
+/*input搜索框搜索*/
+.ant-input-affix-wrapper {
+  color: rgba(0, 20, 29, 0.7);
+  border: 1px solid rgba(0, 20, 29, 0.2);
+  transition: all 0.3s;
+  font-feature-settings: 'tnum';
+  &.contain-addonAfter.contain-addonBefore {
+    border-radius: 0;
+  }
+}
+.ant-input-affix-wrapper::-moz-placeholder {
+  color: rgba(0, 20, 29, 0.3);
+}
+.ant-input-affix-wrapper:-ms-input-placeholder {
+  color: rgba(0, 20, 29, 0.3);
+}
+.ant-input-affix-wrapper::-webkit-input-placeholder {
+  color: rgba(0, 20, 29, 0.3);
+}
+.ant-input-affix-wrapper:-moz-placeholder-shown {
+  text-overflow: ellipsis;
+}
+.ant-input-affix-wrapper:-ms-input-placeholder {
+  text-overflow: ellipsis;
+}
+.ant-input-affix-wrapper:placeholder-shown {
+  text-overflow: ellipsis;
+}
+.ant-input-affix-wrapper:hover {
+  border-color: rgba(0, 20, 29, 0.3);
+  border-right-width: 1px !important;
+}
+.ant-input-affix-wrapper:focus {
+  border-color: @theme-color;
+  border-right-width: 1px !important;
+  outline: 0;
+  box-shadow: none;
+}
+.ant-input-affix-wrapper-disabled {
+  color: rgba(0, 20, 29, 0.15);
+  background-color: #F5F7FA;
+  border-color: #DCDFE6;
+  cursor: not-allowed;
+  opacity: 1;
+}
+.ant-input-affix-wrapper-disabled:hover {
+  border-color: #DCDFE6;
+  border-right-width: 1px !important;
+}
+.ant-input-affix-wrapper[disabled] {
+  color: rgba(0, 20, 29, 0.15);
+  background-color: #F5F7FA;
+  cursor: not-allowed;
+  opacity: 1;
+}
+.ant-input-affix-wrapper[disabled]:hover {
+  border-color: #DCDFE6;
+  border-right-width: 1px !important;
+}
+.ant-input-affix-wrapper.ant-input-affix-wrapper-focused {
+  border-color: @theme-color;
+  border-right-width: 1px !important;
+  outline: 0;
+  box-shadow: none;
+}
+.ant-input-affix-wrapper-lg {
+  padding: 6.5px 11px;
+  font-size: 16px;
+}
+.ant-input-affix-wrapper-sm {
+  padding: 0px 7px;
+}
+.ant-input-affix-wrapper .ant-input {
+  position: relative;
+  text-align: inherit;
+  border: none;
+  padding: 0;
+}
+.ant-input-affix-wrapper .ant-input:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.ant-input-affix-wrapper .ant-input-prefix,
+.ant-input-affix-wrapper .ant-input-suffix {
+  display: flex;
+  align-items: center;
+  color: rgba(0, 20, 29, 0.2);
+  white-space: nowrap;
+}
+.ant-input-affix-wrapper .ant-input-prefix :not(.anticon),
+.ant-input-affix-wrapper .ant-input-suffix :not(.anticon) {
+  line-height: 1.5715;
+}
+.ant-input-affix-wrapper .ant-input-disabled ~ .ant-input-suffix .anticon {
+  color: rgba(0, 0, 0, 0.25);
+  cursor: not-allowed;
+}
+
+/*ant-input-number 数字输入框*/
+
+.ant-input-number {
+  color: rgba(0, 20, 29, 0.7);
+  border: 1px solid rgba(0, 20, 29, 0.2);
+}
+.ant-input-number::-moz-placeholder {
+  color: rgba(0, 20, 29, 0.3);
+}
+.ant-input-number:-ms-input-placeholder {
+  color: rgba(0, 20, 29, 0.3);
+}
+.ant-input-number::-webkit-input-placeholder {
+  color: rgba(0, 20, 29, 0.3);
+}
+.ant-input-number:hover {
+  border-color: rgba(0, 20, 29, 0.5);
+  border-right-width: 1px !important;
+}
+.ant-input-number:focus {
+  border-color: @theme-color;
+  border-right-width: 1px !important;
+  outline: 0;
+  box-shadow: none;
+}
+.ant-input-number-focused {
+  border-color: @theme-color;
+  border-right-width: 1px !important;
+  outline: 0;
+  box-shadow: none;
+}
+.ant-input-number-focused:hover {
+    border-color: @theme-color;
+}
+.ant-input-number-disabled {
+  color: rgba(0, 20, 29, 0.15);
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+  opacity: 1;
+}
+.ant-input-number-disabled:hover {
+  border-color: #DCDFE6;
+  border-right-width: 1px !important;
+}
+.ant-input-number[disabled] {
+  color: rgba(0, 20, 29, 0.15);
+  background-color: #F5F7FA;
+  cursor: not-allowed;
+}
+.ant-input-number[disabled]:hover {
+  border-color: #DCDFE6;
+  border-right-width: 1px !important;
+}
+textarea.ant-input-number {
+  max-width: 100%;
+  height: auto;
+  min-height: 32px;
+  line-height: 1.5715;
+  vertical-align: bottom;
+  transition: all 0.3s, height 0s;
+}
+.ant-input-number-lg {
+  padding: 6.5px 11px;
+  font-size: 16px;
+}
+.ant-input-number-sm {
+  padding: 0px 7px;
+}
+.ant-input-number-handler {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  color: #080819;
+  font-weight: bold;
+  line-height: 0;
+  text-align: center;
+  transition: all 0.1s linear;
+}
+.ant-input-number-handler:active {
+  background: #f4f4f4;
+}
+.ant-input-number-handler:hover .ant-input-number-handler-up-inner,
+.ant-input-number-handler:hover .ant-input-number-handler-down-inner {
+  color: @theme-color;
+}
+.ant-input-number-handler-up-inner,
+.ant-input-number-handler-down-inner {
+  display: inline-block;
+  color: inherit;
+  font-style: normal;
+  line-height: 0;
+  text-align: center;
+  text-transform: none;
+  vertical-align: -0.125em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  right: 4px;
+  width: 12px;
+  height: 12px;
+  color: #080819;
+  line-height: 12px;
+  transition: all 0.1s linear;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.ant-input-number-handler-up-inner .ant-input-number-handler-up-inner-icon,
+.ant-input-number-handler-up-inner .ant-input-number-handler-down-inner-icon,
+.ant-input-number-handler-down-inner .ant-input-number-handler-up-inner-icon,
+.ant-input-number-handler-down-inner .ant-input-number-handler-down-inner-icon {
+  display: block;
+}
+.ant-input-number-focused {
+  border-color: @theme-color;
+  border-right-width: 1px !important;
+  outline: 0;
+  box-shadow: none;
+}
+.ant-input-number-disabled {
+  color: rgba(0, 20, 29, 0.15);
+  background-color: #F5F7FA;
+  cursor: not-allowed;
+  opacity: 1;
+}
+.ant-input-number-disabled:hover {
+  border-color: #DCDFE6;
+  border-right-width: 1px !important;
+}
+.ant-input-number-input {
+  width: 100%;
+  height: 30px;
+  padding: 0 11px;
+  text-align: left;
+  background-color: transparent;
+  border: 0;
+  border-radius: 2px;
+  outline: 0;
+  transition: all 0.3s linear;
+  -moz-appearance: textfield !important;
+}
+.ant-input-number-input::-moz-placeholder {
+  color: rgba(0, 20, 29, 0.3);
+}
+.ant-input-number-input:-ms-input-placeholder {
+  color: rgba(0, 20, 29, 0.3);
+}
+.ant-input-number-input::-webkit-input-placeholder {
+  color: rgba(0, 20, 29, 0.3);
+}
+.cascader-hardware-wrapper.ant-cascader-menus .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled), .cascader-hardware-wrapper.ant-cascader-menus .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled):hover{
+  background: rgba(56,174,214, .08) !important;
+  color: @theme-color !important;
+}
+.cascader-hardware-wrapper.ant-cascader-menus .ant-cascader-menu-item:hover{
+  background: rgba(56,174,214, .08) !important;
+  color: @theme-color !important;
+}
+.ant-cascader-picker:focus .ant-cascader-input{
+  border-color: #009BE5;
+  box-shadow: unset;
+}
+.ant-alert-message{
+  color: @theme-color;
+}
+.ant-input-prefix {
+  margin-right: 0;
+}
+.ant-form-item-has-error {
+  .anticon.ant-input-clear-icon {
+    color: #ff4d4f;
+    opacity: 1;
+  }
+}
+.has-error .ant-input-clear-icon {
+  opacity: 1;
+  color: #ff4d4f;
+}
+
+// a-input-search
+.ant-input-search .ant-input-wrapper .ant-input {
+  height: 32px;
+}
+
+.ant-input-password:not(.ant-input-affix-wrapper-disabled):hover {
+  border-color: @theme-color;
+}
+
+.ant-input-search .ant-input:hover, .ant-input-search .ant-input:focus {
+  border-color: @theme-color;
+}
+
+.ant-input-group .ant-input-affix-wrapper:hover {
+  border-color: @theme-color;
+}

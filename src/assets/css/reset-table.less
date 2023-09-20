@@ -1,0 +1,84 @@
+
+.ant-table{
+  background: #fff;
+  border-radius: 2px;
+  .ant-table-thead {
+    >tr {
+      >th {
+        padding: 13px 10px 13px;
+        background: rgba(0, 20, 29, .02);
+        font-weight:bold;
+        color: rgba(0, 20, 29, .75);
+        border-top: 1px solid rgba(0, 20, 29, .08);
+        border-bottom: 1px solid rgba(0, 20, 29, .08);
+      }
+      >th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan]):before {
+        display: none;
+      }
+    }
+    tr {
+      th:first-child {
+        padding-left:24px;
+      }
+      td:first-child {
+        padding-left:24px;
+      }
+      th:last-child {
+        padding-right:24px;
+        text-align: right;
+      }
+      // 如果有滚动条，滚动条前面得元素右对齐
+      th:has(+ .ant-table-cell-scrollbar) {
+        padding-right:24px;
+        text-align: right;
+      }
+    }
+  }
+  .ant-table-tbody {
+    >tr {
+      >td {
+        padding: 13px 10px 13px;
+        background: #fff;
+        color: rgba(0, 20, 29, .75);
+        border-bottom: 1px solid rgba(0, 20, 29, .04);
+      }
+      >td:last-child {
+        padding-right:24px;
+        text-align: right;
+        .ant-btn.ant-btn-link {
+          display: inline-block;
+          padding: 0;
+          margin-left: 20px;
+        }
+      }
+      >td:first-child {
+        padding-left:24px;
+      }
+    }
+    >tr:last-child {
+      >td {
+        border-bottom: 1px solid rgba(0, 20, 29, .08);
+      }
+    }
+  }
+  .ant-table-placeholder {
+    margin-top:0;
+    border-top:0;
+    border-bottom: 1px solid rgba(0, 20, 29, .08);
+  }
+  .ant-btn.ant-btn-link {
+    font-size:14px;
+  }
+}
+// .ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
+// .ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
+// .ant-table-thead > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
+// .ant-table-tbody > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td{
+//   background: rgba(0, 173, 255, 0.1);
+// }
+.ant-divider, .ant-divider-vertical{
+  margin:0 7px;
+}
+.ant-table-selection-col {
+  width: 48px;
+}

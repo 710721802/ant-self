@@ -1,0 +1,55 @@
+/*a-popover 表单项提示框（带校验功能）*/
+.ant-popover .rule-tab .rule-item{
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: rgba(0, 0, 29, 0.75);
+  line-height: 16px;
+}
+.popover_verify_content {
+  &.hide-content {
+    display: none;
+  }
+}
+.popover_verify_content .rule-tab{
+  min-width: 254px;
+  max-width: 326px;
+  padding: 0;
+  margin-bottom: 0;
+}
+.popover_verify_content .rule-tab .rule-item{
+  display:flex;
+}
+.ant-popover .rule-tab .rule-item:last-child{
+  margin-bottom:0;
+}
+.ant-popover .rule-tab .rule-item .close-icon{
+  margin: 0 8px 0 0;
+  color: #EE2E3A;
+  width:16px;
+  height:16px;
+  font-size: 16px;
+}
+.ant-popover .rule-tab .rule-item .check-icon{
+  margin: 0 8px 0 0;
+  color: #64C647;
+  width:16px;
+  height:16px;
+  font-size: 16px;
+}
+.ant-popover.popover_verify_content .rule-tab .rule-item p{
+  flex:1;
+  margin:0;
+  line-height: 16px;
+}
+.ant-popover .ant-popover-inner{
+  border-radius:2px;
+}
+.ant-popover-inner-content{
+  padding: 12px;
+  // min-width: 200px;
+  min-width: 350px;
+  word-break: break-all;
+}
+.ant-popover-placement-rightTop:not(.popover_verify_content) > .ant-popover-content > .ant-popover-arrow{
+  top:6px;
+}

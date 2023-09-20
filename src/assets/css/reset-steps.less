@@ -1,0 +1,85 @@
+.ant-steps-item {
+    .ant-steps-item-title {
+        line-height: 48px;
+        &::after {
+            top:24px;
+            border-bottom:1px dashed rgba(161, 166, 177, 1);
+        }
+    }
+}
+.ant-steps-item-finish > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title::after {
+    background: none;
+}
+.ant-steps-horizontal:not(.ant-steps-label-vertical) {
+    .ant-steps-item {
+        margin-right:12px;
+    }
+} 
+.ant-steps:not(.ant-steps-vertical) .ant-steps-item-custom .ant-steps-item-icon {
+    width: 48px;
+    height: 48px;
+    border: 4px solid #fff;
+    margin:1px 13px 1px 1px;
+    border-radius:50%;
+    background: rgba(0, 173, 255, .6);
+    line-height: 44px;
+}
+.ant-steps-item-finish .ant-steps-item-icon > .ant-steps-icon {
+    color: rgba(255, 255, 255, 1);
+}
+.ant-steps-item-custom > .ant-steps-item-container > .ant-steps-item-icon > .ant-steps-icon {
+    font-size: 20px;
+}
+.ant-steps-item-custom .ant-steps-item-icon > .ant-steps-icon {
+    font-size: 20px;
+}
+.ant-steps-item-finish > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title {
+    opacity: .6;
+    color: rgba(0, 20, 29, 0.75);
+}
+.ant-steps-item-icon > .ant-steps-icon {
+    font-size: 20px;
+    font-weight: normal;
+    color: #FFFFFF;
+    line-height: 32px;
+}
+.ant-steps-item-process .ant-steps-item-icon {
+    width: 48px;
+    height: 48px;
+    border: 4px solid rgba(204, 239, 255, 1);
+    margin:1px 13px 1px 1px;
+    border-radius:50%;
+    background: rgba(0, 173, 255, 1);
+    line-height: 44px;
+}
+.ant-steps-item-process > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title {
+    color: rgba(0, 20, 29, 0.75);
+}
+.ant-steps .ant-steps-item:not(.ant-steps-item-active):not(.ant-steps-item-process) > .ant-steps-item-container[role='button']:hover .ant-steps-item-icon {
+    border: 4px solid rgba(204, 239, 255, 1);
+    background: rgba(0, 173, 255, 1);
+}
+.ant-steps .ant-steps-item:not(.ant-steps-item-active):not(.ant-steps-item-process) > .ant-steps-item-container[role='button']:hover .ant-steps-item-icon .ant-steps-icon {
+    font-size: 20px;
+    font-weight: normal;
+    color: #FFFFFF;
+}
+.ant-steps .ant-steps-item:not(.ant-steps-item-active) > .ant-steps-item-container[role='button']:hover .ant-steps-item-title, .ant-steps .ant-steps-item:not(.ant-steps-item-active) > .ant-steps-item-container[role='button']:hover .ant-steps-item-subtitle, .ant-steps .ant-steps-item:not(.ant-steps-item-active) > .ant-steps-item-container[role='button']:hover .ant-steps-item-description {
+    opacity: 1;
+    color: rgba(0, 20, 29, 0.75);
+}
+.ant-steps-item-wait .ant-steps-item-icon {
+    width: 48px;
+    height: 48px;
+    border: 4px solid #fff;
+    margin:1px 13px 1px 1px;
+    border-radius:50%;
+    background: rgba(245, 247, 250, 1);
+    line-height: 44px;
+}
+.ant-steps-item-wait .ant-steps-item-icon > .ant-steps-icon {
+    color: rgba(0, 20, 29, 0.3);
+}
+.ant-steps-item-wait > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title {
+    color: rgba(0, 20, 29, 0.4);
+}
